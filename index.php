@@ -18,20 +18,24 @@
         </div>
     </header>
     <main>
+    <?php include 'data.php'; ?>
         <div class='container'>
-            <div class='card'>
-                <div class='image'>
-                    <img src="<?php $disc['poster']?>" alt="figure">
-                </div>    
-                    <h3 class='title'><?php echo $disc['title'] ?></h3>
-                    <span class='artist grey'><?php echo $disc['author'] ?></span><br>
-                    <span class='year grey'><?php echo $disc['year'] ?></span> 
+            <div class='row'>
+                <?php foreach($database as $disc){ ?>
+                    <div class='col-2'>
+                        <div class='image'>
+                            <img src="<?php echo $disc['poster']?>" alt="figure">
+                        </div>    
+                            <h3 class='title'><?php echo $disc['title'] ?></h3>
+                            <span class='artist grey'><?php echo $disc['author'] ?></span>
+                            <span class='year grey'><?php echo $disc['year'] ?></span> 
+                    </div>
+                <?php } ?>     
             </div>
-        </div>
-        
+        </div> 
     </main>
 <?php
-    include 'data.php';
+    
 
     // array_keys($database);
 

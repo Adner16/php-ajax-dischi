@@ -8,13 +8,14 @@ header{
 }
 
 .logo-container{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 .container{
     width: 1000px;
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 
@@ -28,16 +29,29 @@ header{
     color: grey;
 }
 
-.card{
+.col-2{ 
     background-color:#2e3a46;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
-image{
-    width: 100px;
+.image{
+    width: 110px;
     border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-size: 20px;
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: auto;
 }
