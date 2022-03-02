@@ -1,5 +1,5 @@
 console.log('js ok');
-console.log('Vue oh',Vue);
+console.log('Vue oK',Vue);
 console.log('axios ok', axios)
 
 Vue.config.devtools = true;
@@ -7,11 +7,12 @@ Vue.config.devtools = true;
 const app = new Vue({
     el: '#root',
     data: {
-        discs = []
+        discs : []
     },
     mounted(){
-        axios.get('http://localhost/api/discs').then(res =>{
-            this.data.php = res.data;
-        }).catch(err => {console.log(error(err)) })
+        axios.get('http://localhost/api/discs/index.php').then(res =>{
+            this.discs = res.data;
+            console.log(this.discs);
+        });
     }
 });

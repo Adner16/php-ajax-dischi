@@ -48,4 +48,4 @@
 
     header('Content-Type = application json');
 
-    echo json_encode($movies);
+    echo json_encode($discs);
