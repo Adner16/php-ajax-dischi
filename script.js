@@ -7,10 +7,10 @@ Vue.config.devtools = true;
 const app = new Vue({
     el: '#root',
     data: {
-        movies = []
+        discs = []
     },
     mounted(){
-        axios.get('http://localhost/api/movies').then(res =>{
+        axios.get('http://localhost/api/discs').then(res =>{
             this.data.php = res.data;
         }).catch(err => {console.log(error(err)) })
     }
