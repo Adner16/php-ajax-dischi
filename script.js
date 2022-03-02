@@ -10,7 +10,7 @@ const app = new Vue({
         discs : []
     },
     mounted(){
-        axios.get('http://localhost/api/discs/index.php').then(res =>{
+        axios.get('http://localhost:8888/php-ajax-dischi/api/discs/index.php').then(res =>{
             this.discs = res.data;
             console.log(this.discs);
         });
